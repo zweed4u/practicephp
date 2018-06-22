@@ -1,0 +1,16 @@
+<?php
+require_once 'vendor/autoload.php'
+
+$pages = new \Controllers\Core\Web\page();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHPUnit Tutorial</title>
+</head>
+<body>
+  <h1><?php echo $page->render(); ?></h1>
+  <pre><?php var_dump($page->returnArray());?></pre>
+</body>
+</html>
